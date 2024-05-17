@@ -45,7 +45,7 @@ const router = createRouter({
 
 
 router.beforeEach((to, prev, next) => {
-    console.log(to);
+    //console.log(to);
     next();
 });
 

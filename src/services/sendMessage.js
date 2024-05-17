@@ -3,10 +3,9 @@
 import axios from "axios";
 
 export async function sendMessage(message) {
-    console.log(message)
     const config = {
         method: 'POST',
-        url: 'http://localhost:4143/portafolio/message',
+        url: 'https://www.soydanielalejandro.info/portafolio-api/message',
         data: { message }
     }
     return await axios.request(config);
