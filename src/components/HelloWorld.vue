@@ -331,7 +331,7 @@ export default {
     return {
       skills: [
         {
-          src: "src/assets/icons/vue.png",
+          src: "@/assets/icons/vue.png",
         },
         {
           src: "src/assets/icons/angular.webp",
