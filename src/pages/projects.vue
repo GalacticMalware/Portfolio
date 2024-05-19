@@ -103,6 +103,40 @@ export default {
           },
         ],
       },
+      {
+        title: "Start Hip",
+        subtitle: "Interamerican Congress of Pediatrics 2022",
+        text: [
+          {
+            t: "Interactive platform with interactive videoconferencing.",
+          }
+        ],
+        img: "assets/projects/PORTADA-min.jpg",
+        btn: [
+          {
+            url: "https://virtualxperiences.com/25congreso/index.php",
+            icon: "mdi-web",
+            target: "_blank",
+          },
+        ],
+      },
+      {
+        title: "International Pediatric Summit 2021",
+        subtitle: "",
+        text: [
+          {
+            t: "Interactive platform with interactive videoconferencing.",
+          }
+        ],
+        img: "assets/projects/EXPLANADAmmm-min.jpg",
+        btn: [
+          {
+            url: "https://virtualxperiences.com/9cumbre/index2.php",
+            icon: "mdi-web",
+            target: "_blank",
+          },
+        ],
+      },
     ],
   }),
 };
