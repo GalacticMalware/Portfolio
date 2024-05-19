@@ -67,7 +67,7 @@ export default {
             t: "If you need a trial account, please contact me.",
           },
         ],
-        img: "src/assets/projects/Nextcloud-Hub-Logo-1920.jpg",
+        img: "assets/projects/Nextcloud-Hub-Logo-1920.jpg",
         btn: [
           {
             url: "",
@@ -94,7 +94,7 @@ export default {
             t: "Teacher training and professional development system.",
           }
         ],
-        img: "src/assets/projects/tecnolgico_nacional_de_mxico_cover.jpeg",
+        img: "assets/projects/tecnolgico_nacional_de_mxico_cover.jpeg",
         btn: [
           {
             url: "https://fodap.ittg.edu.mx/",

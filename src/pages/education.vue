@@ -139,73 +139,73 @@ export default {
     return {
       back_end: [
         {
-          src: "src/assets/education/AspNet.jpg",
+          src: "assets/education/AspNet.jpg",
         },
         {
-          src: "src/assets/education/DesarrolloSeguro.jpg",
+          src: "assets/education/DesarrolloSeguro.jpg",
         },
         {
-          src: "src/assets/education/OWASP.jpg",
+          src: "assets/education/OWASP.jpg",
         },
         {
-          src: "src/assets/education/JSGUIA.jpg",
+          src: "assets/education/JSGUIA.jpg",
         },
       ],
       front_end: [
         {
-          src: "src/assets/education/udemy_Angular.jpg",
+          src: "assets/education/udemy_Angular.jpg",
         },
         {
-          src: "src/assets/education/certificadoUdemy_php.png",
+          src: "assets/education/certificadoUdemy_php.png",
         },
         {
-          src: "src/assets/education/certificado9.png",
+          src: "assets/education/certificado9.png",
         },
         {
-          src: "src/assets/education/certificado8.png",
+          src: "assets/education/certificado8.png",
         },
         {
-          src: "src/assets/education/udemy_Angular.jpg",
+          src: "assets/education/udemy_Angular.jpg",
         },
         {
-          src: "src/assets/education/certificadoGoogle.png",
+          src: "assets/education/certificadoGoogle.png",
         },
       ],
       sys: [
         {
-          src: "src/assets/education/certificado5.jpeg",
+          src: "assets/education/certificado5.jpeg",
         },
         {
-          src: "src/assets/education/certificado4.jpeg",
+          src: "assets/education/certificado4.jpeg",
         },
         {
-          src: "src/assets/education/certificado3.png",
+          src: "assets/education/certificado3.png",
         },
         {
-          src: "src/assets/education/certificado2.png",
+          src: "assets/education/certificado2.png",
         },
         {
-          src: "src/assets/education/certificado1.png",
+          src: "assets/education/certificado1.png",
         },
       ],
       hack: [
         {
-          src: "src/assets/education/certificado14.png",
+          src: "assets/education/certificado14.png",
         },
         {
-          src: "src/assets/education/SecurityProd.jpg",
+          src: "assets/education/SecurityProd.jpg",
         },
         {
-          src: "src/assets/education/certificado10.png",
+          src: "assets/education/certificado10.png",
         },
         {
-          src: "src/assets/education/certificado11.png",
+          src: "assets/education/certificado11.png",
         },
         {
-          src: "src/assets/education/certificado12.png",
+          src: "assets/education/certificado12.png",
         },
         {
-          src: "src/assets/education/certificado13.png",
+          src: "assets/education/certificado13.png",
         },
       ],
     };
