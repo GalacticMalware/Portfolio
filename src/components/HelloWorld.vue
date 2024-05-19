@@ -334,46 +334,46 @@ export default {
           src: "assets/icons/vue.png",
         },
         {
-          src: "src/assets/icons/angular.webp",
+          src: "assets/icons/angular.webp",
         },
         {
-          src: "src/assets/icons/nodojs.png",
+          src: "assets/icons/nodojs.png",
         },
         {
-          src: "src/assets/icons/js.png",
+          src: "assets/icons/js.png",
         },
         {
-          src: "src/assets/icons/Typescript_logo_2020.svg",
+          src: "assets/icons/Typescript_logo_2020.svg",
         },
         {
-          src: "src/assets/icons/c--4.svg",
+          src: "assets/icons/c--4.svg",
         },
         {
-          src: "src/assets/icons/bootstrap.png",
+          src: "assets/icons/bootstrap.png",
         },
         {
-          src: "src/assets/icons/vuetify.png",
+          src: "assets/icons/vuetify.png",
         },
         {
-          src: "src/assets/icons/mysql.png",
+          src: "assets/icons/mysql.png",
         },
         {
-          src: "src/assets/icons/sql-server.webp",
+          src: "assets/icons/sql-server.webp",
         },
         {
-          src: "src/assets/icons/firebase.png",
+          src: "assets/icons/firebase.png",
         },
         {
-          src: "src/assets/icons/ionic.png",
+          src: "assets/icons/ionic.png",
         },
         {
-          src: "src/assets/icons/NGINX-product-icon.svg",
+          src: "assets/icons/NGINX-product-icon.svg",
         },
         {
-          src: "src/assets/icons/devops-2.webp",
+          src: "assets/icons/devops-2.webp",
         },
         {
-          src: "src/assets/icons/git.png",
+          src: "assets/icons/git.png",
         },
       ],
     };
