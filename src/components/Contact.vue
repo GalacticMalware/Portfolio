@@ -65,7 +65,9 @@
           <div class="mb-2">Message (optional)</div>
 
           <v-textarea
-            :counter="300"
+            :counter="200"
+            :counter-value="200"
+            :rules="[rules.required,rules.max]"
             class="mb-2"
             rows="2"
             variant="outlined"
@@ -136,22 +138,33 @@ export default {
       status: "",
       response: "",
       title: "",
+      rules: {
+        required: value => !!value || 'Field is required',
+        required: v => v.length <= 200 || 'Min 200 characters',
+      },
     };
   },
   methods: {
     async send() {
       try {
-        await sendMessage(this.message);
-        this.status = "success";
-        (this.title = "Success"),
-          (this.response = "The message has been sent successfully");
-        this.snackbar = true;
-        this.dialog = false;
-        this.message = '';
+        if(this.message.length >=201){
+          this.status = "rgb(207,102,121)";
+          this.title = "!Opps";
+          this.response = "You have exceeded your characters. :(";
+          this.snackbar = true;
+        }else{
+          await sendMessage(this.message);
+          this.status = "success";
+          (this.title = "Success"),
+            (this.response = "The message has been sent successfully. :)");
+          this.snackbar = true;
+          this.dialog = false;
+          this.message = '';
+        }
       } catch (e) {
         this.status = "rgb(207,102,121)";
         this.title = "!Opps";
-        this.response = "An error occurred, please try again.";
+        this.response = "An error occurred, please try again. :(";
         this.snackbar = true;
       }
     },

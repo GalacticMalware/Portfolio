@@ -39,12 +39,13 @@
               <v-kbd>{{ `Mode: Online` }}</v-kbd>
             </template>
             <v-carousel show-arrows="hover" cycle height="400" hide-delimiters>
-              
-              <!-- <v-carousel-item
-                src="@/assets/projects/Nextcloud-Hub-Logo-1920.jpg"
+              <v-carousel-item
+                v-for="(item, i) in back_end"
+                :key="i"
+                :src="item.src"
                 show-arrows="hover"
                 cycle
-              ></v-carousel-item> -->
+              ></v-carousel-item>
             </v-carousel>
           </v-card>
         </v-col>
@@ -63,38 +64,14 @@
               </div>
               <v-kbd>{{ `Mode: Online` }}</v-kbd>
             </template>
-
             <v-carousel show-arrows="hover" cycle height="400" hide-delimiters>
               <v-carousel-item
-                src="@/assets/education/certificadoUdemy_php.png"
+                v-for="(item, i) in front_end"
+                :key="i"
+                :src="item.src"
                 show-arrows="hover"
                 cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado9.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado8.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/udemy_Angular.jpg"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificadoGoogle.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
+              ></v-carousel-item>
             </v-carousel>
           </v-card>
         </v-col>
@@ -115,35 +92,12 @@
             </template>
             <v-carousel show-arrows="hover" cycle height="400" hide-delimiters>
               <v-carousel-item
-                src="@/assets/education/certificado5.jpeg"
+                v-for="(item, i) in sys"
+                :key="i"
+                :src="item.src"
                 show-arrows="hover"
                 cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado4.jpeg"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado3.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado2.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado1.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
+              ></v-carousel-item>
             </v-carousel>
           </v-card>
         </v-col>
@@ -165,70 +119,17 @@
             </template>
             <v-carousel show-arrows="hover" cycle height="400" hide-delimiters>
               <v-carousel-item
-                src="@/assets/education/certificado14.png"
+                v-for="(item, i) in hack"
+                :key="i"
+                :src="item.src"
                 show-arrows="hover"
                 cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado10.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado11.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado12.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
-              <v-carousel-item
-                src="@/assets/education/certificado13.png"
-                show-arrows="hover"
-                cycle
-                hide-delimiter-background
-              />
+              ></v-carousel-item>
             </v-carousel>
           </v-card>
         </v-col>
       </v-row>
     </v-responsive>
-
-    <!-- <v-row>
-    <v-col
-      v-for="n in 9"
-      :key="n"
-      class="d-flex child-flex"
-      cols="4"
-    >
-      <v-img
-        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-        aspect-ratio="1"
-        class="bg-grey-lighten-2"
-        cover
-      >
-        <template v-slot:placeholder>
-          <v-row
-            align="center"
-            class="fill-height ma-0"
-            justify="center"
-          >
-            <v-progress-circular
-              color="grey-lighten-5"
-              indeterminate
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
-    </v-col>
-  </v-row> -->
   </v-container>
 </template>
 
@@ -236,18 +137,75 @@
 export default {
   data() {
     return {
-      items: [
+      back_end: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: "src/assets/education/AspNet.jpg",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: "src/assets/education/DesarrolloSeguro.jpg",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          src: "src/assets/education/OWASP.jpg",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+          src: "src/assets/education/JSGUIA.jpg",
+        },
+      ],
+      front_end: [
+        {
+          src: "src/assets/education/udemy_Angular.jpg",
+        },
+        {
+          src: "src/assets/education/certificadoUdemy_php.png",
+        },
+        {
+          src: "src/assets/education/certificado9.png",
+        },
+        {
+          src: "src/assets/education/certificado8.png",
+        },
+        {
+          src: "src/assets/education/udemy_Angular.jpg",
+        },
+        {
+          src: "src/assets/education/certificadoGoogle.png",
+        },
+      ],
+      sys: [
+        {
+          src: "src/assets/education/certificado5.jpeg",
+        },
+        {
+          src: "src/assets/education/certificado4.jpeg",
+        },
+        {
+          src: "src/assets/education/certificado3.png",
+        },
+        {
+          src: "src/assets/education/certificado2.png",
+        },
+        {
+          src: "src/assets/education/certificado1.png",
+        },
+      ],
+      hack: [
+        {
+          src: "src/assets/education/certificado14.png",
+        },
+        {
+          src: "src/assets/education/SecurityProd.jpg",
+        },
+        {
+          src: "src/assets/education/certificado10.png",
+        },
+        {
+          src: "src/assets/education/certificado11.png",
+        },
+        {
+          src: "src/assets/education/certificado12.png",
+        },
+        {
+          src: "src/assets/education/certificado13.png",
         },
       ],
     };

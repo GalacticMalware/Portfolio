@@ -2,21 +2,8 @@
   <div v-if="!$vuetify.display.xs">
     <br />
   </div>
-
   <v-container class="fill-height">
     <v-responsive class="align-centerfill-height mx-auto">
-      
-      <!-- <v-img class="mb-4" height="250" src="@/assets/undraw_Developer.png" /> -->
-      <!-- <div class="center-typing-content"> -->
-
-      <!-- </div> -->
-      <!-- <div class="text-center">>
-        <h1 class="text">Hola soy Daniel Alejandro <br />Morales Gomez</h1>
-        <div class="text-subtitle-1">Ingeniero Sistemas Computacionales</div>
-      </div> -->
-      
-      <!-- <div class="py-4" /> -->
-
       <v-row>
         <v-col cols="12">
           <v-card
@@ -30,7 +17,6 @@
             rounded="lg"
             variant="outlined"
           >
-          
             <template #image>
               <v-img position="top right" />
             </template>
@@ -151,7 +137,6 @@
               model-value
               persistent
             />
-            
           </v-card>
         </v-col>
 
@@ -311,125 +296,18 @@
               <div class="text-subtitle-1 text-wrap">
                 <br />
                 <v-row class="wrapper">
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                    <v-img
-                      alt="Vue"
-                      :width="35"
-                      src="@/assets/icons/vue.png"
-                    ></v-img>
+                  <v-col
+                    cols="2"
+                    xs="4"
+                    sm="4"
+                    md="2"
+                    lg="1"
+                    xl="1"
+                    v-for="(item, i) in skills"
+                    :key="i"
+                  >
+                    <v-img :width="35" :src="item.src"></v-img>
                   </v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Angular"
-                      :width="35"
-                      src="@/assets/icons/angular.webp"
-                    ></v-img
-                  ></v-col>
-                  <!-- <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="React"
-                      :width="35"
-                      src="https://104.254.244.123/img/tecnologia/vue.png"
-                    ></v-img
-                  ></v-col> -->
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="NodeJs"
-                      :width="35"
-                      src="@/assets/icons/nodojs.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Js"
-                      :width="35"
-                      src="@/assets/icons/js.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Ts"
-                      :width="35"
-                      src="@/assets/icons/Typescript_logo_2020.svg"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="C#"
-                      :width="35"
-                      src="@/assets/icons/c--4.svg"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Booststrap"
-                      :width="35"
-                      src="@/assets/icons/bootstrap.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Vuetify"
-                      :width="35"
-                      src="@/assets/icons/vuetify.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="MySql"
-                      :width="35"
-                      src="@/assets/icons/mysql.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="SqlServer"
-                      :width="35"
-                      src="@/assets/icons/sql-server.webp"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Firebase"
-                      :width="35"
-                      src="@/assets/icons/firebase.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Ionic"
-                      :width="35"
-                      src="@/assets/icons/ionic.png"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Nginex"
-                      :width="35"
-                      src="@/assets/icons/NGINX-product-icon.svg"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Azure"
-                      :width="35"
-                      src="@/assets/icons/azure-2.svg"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="DevOps"
-                      :width="35"
-                      src="@/assets/icons/devops-2.webp"
-                    ></v-img
-                  ></v-col>
-                  <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"
-                    ><v-img
-                      alt="Git"
-                      :width="35"
-                      src="@/assets/icons/git.png"
-                    ></v-img
-                  ></v-col>
                 </v-row>
               </div>
             </template>
@@ -442,57 +320,63 @@
             />
           </v-card>
         </v-col>
-        <!--
-        <v-col cols="6">
-          <v-card
-            append-icon="mdi-open-in-new"
-            class="py-4"
-            color="surface-variant"
-            href="https://vuetifyjs.com/components/all"
-            prepend-icon="mdi-widgets-outline"
-            rel="noopener noreferrer"
-            rounded="lg"
-            subtitle="Discover components in the API Explorer."
-            target="_blank"
-            title="Components"
-            variant="text"
-          >
-            <v-overlay
-              opacity=".06"
-              scrim="primary"
-              contained
-              model-value
-              persistent
-            />
-          </v-card>
-        </v-col>
-
-        <v-col cols="6">
-          <v-card
-            append-icon="mdi-open-in-new"
-            class="py-4"
-            color="surface-variant"
-            href="https://discord.vuetifyjs.com"
-            prepend-icon="mdi-account-group-outline"
-            rel="noopener noreferrer"
-            rounded="lg"
-            subtitle="Connect with Vuetify developers."
-            target="_blank"
-            title="Community"
-            variant="text"
-          >
-            <v-overlay
-              opacity=".06"
-              scrim="primary"
-              contained
-              model-value
-              persistent
-            />
-          </v-card>
-        </v-col> -->
       </v-row>
     </v-responsive>
   </v-container>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {
+      skills: [
+        {
+          src: "src/assets/icons/vue.png",
+        },
+        {
+          src: "src/assets/icons/angular.webp",
+        },
+        {
+          src: "src/assets/icons/nodojs.png",
+        },
+        {
+          src: "src/assets/icons/js.png",
+        },
+        {
+          src: "src/assets/icons/Typescript_logo_2020.svg",
+        },
+        {
+          src: "src/assets/icons/c--4.svg",
+        },
+        {
+          src: "src/assets/icons/bootstrap.png",
+        },
+        {
+          src: "src/assets/icons/vuetify.png",
+        },
+        {
+          src: "src/assets/icons/mysql.png",
+        },
+        {
+          src: "src/assets/icons/sql-server.webp",
+        },
+        {
+          src: "src/assets/icons/firebase.png",
+        },
+        {
+          src: "src/assets/icons/ionic.png",
+        },
+        {
+          src: "src/assets/icons/NGINX-product-icon.svg",
+        },
+        {
+          src: "src/assets/icons/devops-2.webp",
+        },
+        {
+          src: "src/assets/icons/git.png",
+        },
+      ],
+    };
+  },
+};
+</script>

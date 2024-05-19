@@ -37,60 +37,17 @@
               <br /><br />
               <!-- <v-avatar image="@/assets/icons/c--4.svg" size="25" start /> -->
               <v-row class="wrapper">
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img alt="C#" :width="25" src="@/assets/icons/c--4.svg" />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Nodejs"
-                    :width="25"
-                    src="@/assets/icons/nodojs.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Js"
-                    :width="25"
-                    src="@/assets/icons/js.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="sql"
-                    :width="25"
-                    src="@/assets/icons/sql-server.webp"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Mysql"
-                    :width="25"
-                    src="@/assets/icons/mysql.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Azure"
-                    :width="25"
-                    src="@/assets/icons/azure-2.svg"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img alt="Pipe" :width="25" src="@/assets/icons/pipe.png" />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Repos"
-                    :width="25"
-                    src="@/assets/icons/azure_repos.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="DevOps"
-                    :width="25"
-                    src="@/assets/icons/devops-2.webp"
-                  />
+                <v-col
+                  cols="2"
+                  xs="4"
+                  sm="4"
+                  md="2"
+                  lg="1"
+                  xl="1"
+                  v-for="(item, i) in credi"
+                  :key="i"
+                >
+                  <v-img :width="25" :src="item.src" />
                 </v-col>
                 <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"></v-col>
                 <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1"></v-col>
@@ -145,110 +102,17 @@
               Testing of all projects. <br />
               <br />
               <v-row class="wrapper">
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Html"
-                    :width="25"
-                    src="@/assets/icons/html.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Css"
-                    :width="25"
-                    src="@/assets/icons/css.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Angular"
-                    :width="25"
-                    src="@/assets/icons/angular.webp"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Vue"
-                    :width="25"
-                    src="@/assets/icons/vue.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Nodejs"
-                    :width="25"
-                    src="@/assets/icons/nodojs.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Js"
-                    :width="25"
-                    src="@/assets/icons/js.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Ts"
-                    :width="25"
-                    src="@/assets/icons/Typescript_logo_2020.svg"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Php"
-                    :width="25"
-                    src="@/assets/icons/php.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="JQuery"
-                    :width="25"
-                    src="@/assets/icons/70142.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Booststrap"
-                    :width="25"
-                    src="@/assets/icons/bootstrap.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Mysql"
-                    :width="25"
-                    src="@/assets/icons/mysql.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Firebase"
-                    :width="25"
-                    src="@/assets/icons/firebase.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Ionic"
-                    :width="25"
-                    src="@/assets/icons/ionic.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Nginex"
-                    :width="25"
-                    src="@/assets/icons/NGINX-product-icon.svg"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Git"
-                    :width="25"
-                    src="@/assets/icons/github.png"
-                  />
+                <v-col
+                  cols="2"
+                  xs="4"
+                  sm="4"
+                  md="2"
+                  lg="1"
+                  xl="1"
+                  v-for="(item, i) in axi"
+                  :key="i"
+                >
+                  <v-img :width="25" :src="item.src" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -282,10 +146,7 @@
           <v-card class="elevation-2">
             <v-card-title class="text-body-1">
               <div class="text-wrap">
-                <v-avatar
-                  image="@/assets/icons/tec.jpg"
-                >
-                </v-avatar>
+                <v-avatar image="@/assets/icons/tec.jpg"> </v-avatar>
                 Instututo Tecnologico Nacional de Mexico
               </div>
 
@@ -311,95 +172,17 @@
               Server configuration and deployment of projects.
               <br /><br />
               <v-row class="wrapper">
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Html"
-                    :width="25"
-                    src="@/assets/icons/html.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Css"
-                    :width="25"
-                    src="@/assets/icons/css.png"
-                  />
-                </v-col>
-                
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Vue"
-                    :width="25"
-                    src="@/assets/icons/vue.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Laravel"
-                    :width="25"
-                    src="@/assets/icons/laravel.png"
-                  />
-                </v-col>
-                
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Js"
-                    :width="25"
-                    src="@/assets/icons/js.png"
-                  />
-                </v-col>
-                
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Php"
-                    :width="25"
-                    src="@/assets/icons/php.png"
-                  />
-                </v-col>
-               
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Vuetify"
-                    :width="25"
-                    src="@/assets/icons/vuetify.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Booststrap"
-                    :width="25"
-                    src="@/assets/icons/bootstrap.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Mysql"
-                    :width="25"
-                    src="@/assets/icons/mysql.png"
-                  />
-                </v-col>
-               
-                
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Nginex"
-                    :width="25"
-                    src="@/assets/icons/NGINX-product-icon.svg"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Git"
-                    :width="25"
-                    src="@/assets/icons/github.png"
-                  />
-                </v-col>
-                <v-col cols="2" xs="4" sm="4" md="2" lg="1" xl="1">
-                  <v-img
-                    alt="Pwa"
-                    :width="25"
-                    src="@/assets/icons/PWA.svg"
-                  />
+                <v-col
+                  cols="2"
+                  xs="4"
+                  sm="4"
+                  md="2"
+                  lg="1"
+                  xl="1"
+                  v-for="(item, i) in tec"
+                  :key="i"
+                >
+                  <v-img :width="25" :src="item.src" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -410,6 +193,125 @@
   </v-container>
 </template>
 
-<script setup>
-// ...
+<script>
+export default {
+  data() {
+    return {
+      credi: [
+        {
+          src: "src/assets/icons/c--4.svg",
+        },
+        {
+          src: "src/assets/icons/nodojs.png",
+        },
+        {
+          src: "src/assets/icons/js.png",
+        },
+        {
+          src: "src/assets/icons/sql-server.webp",
+        },
+        {
+          src: "src/assets/icons/mysql.png",
+        },
+        {
+          src: "src/assets/icons/azure-2.svg",
+        },
+        {
+          src: "src/assets/icons/pipe.png",
+        },
+        {
+          src: "src/assets/icons/azure_repos.png",
+        },
+        {
+          src: "src/assets/icons/devops-2.webp",
+        },
+      ],
+      axi: [
+        {
+          src: "src/assets/icons/html.png",
+        },
+        {
+          src: "src/assets/icons/css.png",
+        },
+        {
+          src: "src/assets/icons/angular.webp",
+        },
+        {
+          src: "src/assets/icons/nodojs.png",
+        },
+        {
+          src: "src/assets/icons/js.png",
+        },
+        {
+          src: "src/assets/icons/Typescript_logo_2020.svg",
+        },
+        {
+          src: "src/assets/icons/php.png",
+        },
+        {
+          src: "src/assets/icons/70142.png",
+        },
+        {
+          src: "src/assets/icons/bootstrap.png",
+        },
+        {
+          src: "src/assets/icons/mysql.png",
+        },
+        {
+          src: "src/assets/icons/firebase.png",
+        },
+        {
+          src: "src/assets/icons/ionic.png",
+        },
+        {
+          src: "src/assets/icons/androide.png",
+        },
+        {
+          src: "src/assets/icons/NGINX-product-icon.svg",
+        },
+        {
+          src: "src/assets/icons/github.png",
+        },
+      ],
+      tec: [
+        {
+          src: "src/assets/icons/html.png",
+        },
+        {
+          src: "src/assets/icons/css.png",
+        },
+        {
+          src: "src/assets/icons/vue.png",
+        },
+        {
+          src: "src/assets/icons/laravel.png",
+        },
+        {
+          src: "src/assets/icons/js.png",
+        },
+        {
+          src: "src/assets/icons/php.png",
+        },
+        {
+          src: "src/assets/icons/vuetify.png",
+        },
+        {
+          src: "src/assets/icons/bootstrap.png",
+        },
+        {
+          src: "src/assets/icons/mysql.png",
+        },
+        {
+          src: "src/assets/icons/NGINX-product-icon.svg",
+        },
+        {
+          src: "src/assets/icons/github.png",
+        },
+        {
+          src: "src/assets/icons/PWA.svg",
+        },
+      ],
+    };
+  },
+};
 </script>
